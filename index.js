@@ -56,7 +56,7 @@ function handleEvent(event) {
 
 app.get('/send',(req,res) =>{
     let message = {
-        type: 'message',
+        type: 'text',
         text: "Hello World"
       };
     client.pushMessage("U5e6410209cf1edbb5c4d324a14c8ff05",message)
