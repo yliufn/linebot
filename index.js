@@ -56,9 +56,8 @@ function handleEvent(event) {
 
 app.get('/send',(req,res) =>{
     let message = {
-        type: 'sticker',
-        packageId: '2000000'
-        stickerId: '47999'
+        type: 'message',
+        text: "Hello World"
       };
     client.pushMessage("U5e6410209cf1edbb5c4d324a14c8ff05",message)
     .then(() => {
